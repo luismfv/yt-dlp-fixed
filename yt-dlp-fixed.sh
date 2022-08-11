@@ -38,4 +38,4 @@ do
 done
 
 rm -rf url.txt
-echo finished downloading and cleaning up left over files 
+echo finished downloading

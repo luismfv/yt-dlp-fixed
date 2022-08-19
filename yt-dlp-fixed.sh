@@ -60,14 +60,14 @@ get_channel_name
 echo "Channel name is $folder_name"
 
 #check if directory exists, if not, create one.
-DIRECTORY=$folder_name
+DIRECTORY="$folder_name"
 if [ -d "$DIRECTORY" ]; then
     echo "$DIRECTORY is a valid directory"
-    cd $folder_name
+    cd "$folder_name"
 else
     echo "$DIRECTORY is not valid... creating"
-    mkdir $folder_name
-    cd $folder_name
+    mkdir "$folder_name"
+    cd "$folder_name"
 fi
 
 #check if url.txt is present in channel directory, if yes it resumes downloading, if not it downloads ids again and redownloads videos checking against archive.log for existing videos
